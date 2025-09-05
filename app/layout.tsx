@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Shishir Thapa Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/favicon.ico",
         width: 1200,
         height: 630,
         alt: "Shishir Thapa Portfolio",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Shishir Thapa | Full Stack Developer",
     description:
       "Full Stack Developer portfolio showcasing Next.js, GSAP animations, PostgreSQL, and Tailwind CSS.",
-    images: ["/og-image.png"],
+    images: ["/favicon.ico"],
     creator: "@yourTwitterHandle",
   },
 
@@ -80,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
