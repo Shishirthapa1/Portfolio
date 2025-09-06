@@ -9,12 +9,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Shishir Thapa",
   description:
-    "Welcome to the portfolio of Shishir Thapa, a Full Stack Developer specializing in Next.js, GSAP animations, PostgreSQL, and Tailwind CSS.",
+    "Welcome to the portfolio of Shishir Thapa, a Full Stack Developer specializing in MERN Stack, Next.js, GSAP, Framer Motion animations, PostgreSQL, MongoDB and Tailwind CSS.",
   keywords: [
     "Shishir Thapa",
     "Portfolio",
     "Full Stack Developer",
+    "MERN Stack",
     "Next.js",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
     "GSAP",
     "PostgreSQL",
     "Tailwind CSS",
@@ -25,12 +30,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Shishir Thapa" }],
   creator: "Shishir Thapa",
   publisher: "Shishir Thapa",
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://shishirthapa.vercel.app/"),
   openGraph: {
     title: "Shishir Thapa | Full Stack Developer Portfolio",
     description:
       "Portfolio website built with Next.js, FramerMotion, Typescript, and Tailwind CSS.",
-    url: "https://your-domain.com",
+    url: "https://shishirthapa.vercel.app/",
     siteName: "Shishir Thapa Portfolio",
     images: [
       {
@@ -80,6 +85,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta
+          name="google-site-verification"
+          content="uzMc0og-NU0FkdRTXY3HVEusQ3acfxRhkFLgVNrCty0"
+        />
+        <link rel="canonical" href="https://shishirthapa.vercel.app/" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
