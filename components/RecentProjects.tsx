@@ -6,14 +6,15 @@ import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import Link from "next/link";
 import { it } from "node:test";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
-      <h1 className="heading">
+      <h2 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
-      </h1>
+      </h2>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
@@ -26,18 +27,25 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    height={500}
+                    width={500}
+                    src="/bg.png"
+                    alt="Shishir Thapa"
+                  />
                 </div>
-                <img
+                <Image
+                  height={500}
+                  width={500}
                   src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  alt="Shishir Thapa"
+                  className="z-10 absolute bottom-0 w-auto h-auto"
                 />
               </div>
 
-              <h1 className="font-bold lg:text-xl md:text-xl text-base line-clamp-1">
+              <h2 className="font-bold lg:text-xl md:text-xl text-base line-clamp-1">
                 {item.title}
-              </h1>
+              </h2>
 
               <p
                 className="lg:text-base lg:font-normal font-light text-sm line-clamp-3"
@@ -59,7 +67,13 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image
+                        height={500}
+                        width={500}
+                        src={icon}
+                        alt="Shishir Thapa"
+                        className="p-2 w-auto h-auto"
+                      />
                     </div>
                   ))}
                 </div>

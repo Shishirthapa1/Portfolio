@@ -4,14 +4,15 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import Image from "next/image";
 
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
-      <h1 className="heading">
+      <h2 className="heading">
         Kind words from
         <span className="text-purple"> satisfied clients</span>
-      </h1>
+      </h2>
 
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
@@ -29,14 +30,17 @@ const Clients = () => {
           {companies.map((company) => (
             <React.Fragment key={company.id}>
               <div className="flex md:max-w-60 max-w-32 gap-2">
-                <img
+                <Image
+                  height={500}
+                  width={500}
                   src={company.img}
-                  alt={company.name}
+                  alt="Shishir Thapa"
                   className="md:w-10 w-5"
                 />
-                <img
+                <Image
+                  height={500}
                   src={company.nameImg}
-                  alt={company.name}
+                  alt="Shishir Thapa"
                   width={company.id === 4 || company.id === 5 ? 100 : 150}
                   className="md:w-24 w-20"
                 />
