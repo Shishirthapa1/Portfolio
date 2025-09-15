@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to the portfolio of Shishir Thapa, a Full Stack Developer specializing in MERN Stack, Next.js, GSAP, Framer Motion animations, PostgreSQL, MongoDB and Tailwind CSS.",
   keywords: [
+    "shishir thapa",
     "Shishir Thapa",
     "Portfolio",
     "Full Stack Developer",
@@ -85,6 +86,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Shishir Thapa",
+              url: "https://shishirthapa.vercel.app",
+              jobTitle: "Full Stack Developer",
+              sameAs: [
+                "https://github.com/Shishirthapa1",
+                "https://www.linkedin.com/in/shishirthapaa/",
+              ],
+            }),
+          }}
+        />
         <meta
           name="google-site-verification"
           content="uzMc0og-NU0FkdRTXY3HVEusQ3acfxRhkFLgVNrCty0"

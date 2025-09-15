@@ -289,6 +289,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    linkTo: "https://www.linkedin.com/in/shishir-thapa-599144238/",
+    linkTo: "https://www.linkedin.com/in/shishirthapaa",
   },
 ];
