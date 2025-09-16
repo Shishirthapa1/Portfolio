@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Shishir Thapa Portfolio",
     images: [
       {
-        url: "/favicon.ico",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Shishir Thapa Portfolio",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description:
       "Full Stack Developer portfolio showcasing Next.js, GSAP animations, PostgreSQL, and Tailwind CSS.",
     images: ["/favicon.ico"],
-    creator: "@yourTwitterHandle",
+    creator: "@StarboyPUBG1",
   },
 
   icons: {
