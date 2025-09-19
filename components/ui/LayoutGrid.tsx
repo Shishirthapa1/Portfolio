@@ -91,7 +91,7 @@ const BlurImage = ({ card }: { card: Card }) => {
         "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
         loaded ? "blur-none" : "blur-md"
       )}
-      alt="thumbnail"
+      alt="Shishir Thapa"
     />
   );
 };

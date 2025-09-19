@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
@@ -7,9 +8,9 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shishir Thapa",
+  title: "Shishir Thapa | Full Stack Developer",
   description:
-    "Welcome to the portfolio of Shishir Thapa, a Full Stack Developer specializing in MERN Stack, Next.js, GSAP, Framer Motion animations, PostgreSQL, MongoDB and Tailwind CSS.",
+    "Hi, I'm Shishir Thapa. I build modern web applications using Next.js, MERN Stack, GSAP, Framer Motion, PostgreSQL, MongoDB, and Tailwind CSS. Explore my portfolio to see my projects, animations, and web development work.",
   keywords: [
     "shishir thapa",
     "Shishir Thapa",
@@ -27,6 +28,23 @@ export const metadata: Metadata = {
     "Web Development",
     "Frontend Developer",
     "Backend Developer",
+    "Full Stack Developer",
+    "MERN Stack Developer",
+    "Next.js Developer",
+    "React.js Developer",
+    "Node.js Developer",
+    "Express.js Developer",
+    "MongoDB Portfolio",
+    "PostgreSQL Portfolio",
+    "GSAP Animations",
+    "Framer Motion Portfolio",
+    "Tailwind CSS Developer",
+    "Web Development Portfolio",
+    "Frontend Developer",
+    "Backend Developer",
+    "Web Applications",
+    "JavaScript Developer",
+    "Full Stack Web Projects",
   ],
   authors: [{ name: "Shishir Thapa" }],
   creator: "Shishir Thapa",
@@ -35,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shishir Thapa | Full Stack Developer Portfolio",
     description:
-      "Portfolio website built with Next.js, FramerMotion, Typescript, and Tailwind CSS.",
+      "I'm Shishir Thapa, a Full Stack Developer. Check out my portfolio featuring web applications, GSAP animations, Framer Motion effects, and projects built with Next.js, MongoDB, and Tailwind CSS.",
     url: "https://shishirthapa.vercel.app/",
     siteName: "Shishir Thapa Portfolio",
     images: [
@@ -54,8 +72,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shishir Thapa | Full Stack Developer",
     description:
-      "Full Stack Developer portfolio showcasing Next.js, GSAP animations, PostgreSQL, and Tailwind CSS.",
-    images: ["/favicon.ico"],
+      "I'm Shishir Thapa, a Full Stack Developer. My portfolio showcases projects using Next.js, MERN Stack, GSAP animations, PostgreSQL, and Tailwind CSS. Explore my work!",
+    images: ["/og-image.png"],
     creator: "@StarboyPUBG1",
   },
 
@@ -91,14 +109,25 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
+              "@type": "Website",
               name: "Shishir Thapa",
               url: "https://shishirthapa.vercel.app",
               jobTitle: "Full Stack Developer",
+              author: {
+                "@type": "Person",
+                name: "Shishir Thapa",
+              },
               sameAs: [
                 "https://github.com/Shishirthapa1",
                 "https://www.linkedin.com/in/shishirthapaa/",
+                "https://twitter.com/StarboyPUBG1",
               ],
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://shishirthapa.vercel.app/?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
             }),
           }}
         />
