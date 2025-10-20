@@ -9,7 +9,7 @@ module.exports = {
   robotsTxtOptions: {
     policies: [
       { userAgent: "*", allow: "/" },
-      { userAgent: "Googlebot", allow: "/" },
+      // { userAgent: "Googlebot", allow: "/" },
     ],
     additionalSitemaps: [], // no need to add sitemap.xml itself here
   },
