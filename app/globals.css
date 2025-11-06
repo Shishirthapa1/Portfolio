@@ -83,3 +83,9 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+
+html {
+  scroll-behavior: smooth; /* enables smooth scrolling */
+  scroll-padding-top: 100px; /* adjust to your navbar height */
+}
