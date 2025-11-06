@@ -66,6 +66,16 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+* {
+  @apply border-border;
+}
+
+
 @layer base {
   * {
     @apply border-border !scroll-smooth;
@@ -85,7 +95,3 @@
 }
 
 
-html {
-  scroll-behavior: smooth; /* enables smooth scrolling */
-  scroll-padding-top: 100px; /* adjust to your navbar height */
-}
