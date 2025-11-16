@@ -1,4 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import { FaFileAlt } from "react-icons/fa";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -56,14 +57,23 @@ const Hero = () => {
             Hi, I&apos;m Shishir, a Full Stack developer with expertise in
             Next.js and MERN Stack based in Nepal.
           </h2>
-
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-row space-x-4 items-center justify-center">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              {" "}
+              <MagicButton
+                title="Download my resume"
+                icon={<FaFileAlt />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
