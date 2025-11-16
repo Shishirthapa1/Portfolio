@@ -66,6 +66,16 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+* {
+  @apply border-border;
+}
+
+
 @layer base {
   * {
     @apply border-border !scroll-smooth;
@@ -83,3 +93,5 @@
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+
