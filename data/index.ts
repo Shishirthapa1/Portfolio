@@ -75,6 +75,22 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "Dis Displays Ecommerce Website",
+    des: "Developed a Ecommerce Website and Admin Dashboard highlighting the products and services offered by Dis Displays using Next.Js, Redux Toolkit, NodeJs, MongoDB and Tailwindcss.",
+    img: "/images/disDisplays.png",
+    iconLists: [
+      "/next.svg",
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/fm.svg",
+      "/redux.svg",
+    ],
+    link: "https://disdisplays.com.au/",
+    linkTitle: "disdisplays.com.au",
+  },
+  {
+    id: 2,
     title: "BhansaMart-Ecommerce Website",
     des: "Developed a Ecommerce Website highlighting the products and services offered by Bhansa-Mart using React.js, Graphql, Redux Toolkit and Tailwindcss.",
     img: "/images/bhansamart.png",
@@ -89,7 +105,7 @@ export const projects = [
     linkTitle: "bhansamart.com",
   },
   {
-    id: 2,
+    id: 3,
     title: "Hospital Management System",
     des: "Created a Hospital Management System for managing daily task and operations in a hospital using React.js, Tailwindcss, Redux Toolkit and Toolkit Query.",
     img: "/p2.svg",
@@ -98,7 +114,7 @@ export const projects = [
     linkTitle: "hospital.webstudiomatrix.com",
   },
   {
-    id: 3,
+    id: 4,
     title: "Ecommerce Website and Dashboard",
     des: "Developed a Ecommerce Website highlighting the jewelleries, products and services offered by Barun Gems using Next.Js, React Query, Redux Toolkit and Tailwindcss.",
     img: "/images/barunGems.png",
@@ -115,7 +131,7 @@ export const projects = [
     linkTitle: "barungems.webstudiomatrix.com",
   },
   {
-    id: 4,
+    id: 5,
     title: "Travel and Trekking Website",
     des: "Developed a Travel and Trekking Website highlighting the services offered by Travel Trekking using Next.js, React Query, Redux Toolkit and Tailwindcss.",
     img: "/images/travelTrekking.png",
@@ -132,7 +148,7 @@ export const projects = [
     linkTitle: "travel.webstudiomatrix.com",
   },
   {
-    id: 5,
+    id: 6,
     title: "Webstudio Company Website",
     des: "Developed a official Website for my previous company highlighting the services offered by Webstudio using Next.js, FramerMotion, Nodejs, Mongodb and Tailwindcss.",
     img: "/images/signatureWebstudio.png",
@@ -141,7 +157,7 @@ export const projects = [
     linkTitle: "signaturewebstudio.com",
   },
   {
-    id: 6,
+    id: 7,
     title: "Ecommerce Website and Dashboard",
     des: "Developed a Ecommerce Website highlighting the jewelleries, products and services offered by Panchakanya Jewellers using Next.Js, React Query, Redux Toolkit and Tailwindcss.",
     img: "/images/panchakanya.png",
@@ -158,7 +174,7 @@ export const projects = [
     linkTitle: "panchakanya.webstudiomatrix.com",
   },
   {
-    id: 7,
+    id: 8,
     title: "School Management System",
     des: "Collaborated to develop a School Management System using React.js, Next.js, Node.js Express.js, and MongoDB",
     img: "/images/school.png",
