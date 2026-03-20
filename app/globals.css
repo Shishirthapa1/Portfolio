@@ -75,7 +75,6 @@ html {
   @apply border-border;
 }
 
-
 @layer base {
   * {
     @apply border-border !scroll-smooth;
@@ -93,5 +92,3 @@ html {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
-
-

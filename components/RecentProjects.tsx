@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="py-20 scroll-mt-10" id="projects">
       <h2 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
